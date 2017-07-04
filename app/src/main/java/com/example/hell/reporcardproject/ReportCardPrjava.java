@@ -155,7 +155,7 @@ public class ReportCardPrjava {
     {
         this.gradeProceduralProgramming = gradeProceduralProgramming;
     }
-    // Return of  the  object Report Card by using the toString method and a String Builder
+    // Return of  the   Report Card by using the toString method and a String Builder
     public String toString() {
         StringBuilder builder = new StringBuilder();
         builder.append("Student Name: ");
