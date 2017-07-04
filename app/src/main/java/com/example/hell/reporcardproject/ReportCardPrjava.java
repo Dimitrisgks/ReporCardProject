@@ -1,20 +1,18 @@
 
 package com.example.hell.reporcardproject;
-/**
- * Created by Hell on 7/3/2017.
- */
+// a report card with grades
 
 public class ReportCardPrjava {
 
 
+    //global constant that represents the number of lessons
 
+    private int lessons = 8;
 
-    private int subjects = 8;
-
-
+    // This is a global constant when there is no value on grade.
     public String Undefined = "Undefined Grade";
 
-
+    // Constants for the grades
     public static final String Grade_A = "Perfect";
 
     public static final String Grade_B = "Great";
@@ -27,13 +25,12 @@ public class ReportCardPrjava {
 
     public static final String Grade_F = "Bad" ;
 
-    private String Results;
-
+    // Variables we gonna need for this like the student name etc
     private String studentName;
     private int studentID;
     private int studentSemester;
 
-
+    //Grades for the lessons
     private String gradeMathematics;
     private String gradeDigitalDesign;
     private String gradeEnglish;
@@ -43,14 +40,14 @@ public class ReportCardPrjava {
     private String gradeComputerArchitecture;
     private String gradeProceduralProgramming;
 
-
+// here is the creation of the object report card which have most of the variables
 
     public ReportCardPrjava(String studentName, int studentID, int studentSemester, String gradeMathematics, String gradeDigitalDesign, String gradeEnglish, String gradeDataStructure, String gradeScience, String gradeRealAnalysis, String gradeComputerArchitectur,String gradeProceduralProgramming)
     {
-        this.studentName = studentName;
-        this.studentID = studentID;
-        this.studentSemester = studentSemester;
-        this.gradeMathematics = Undefined;
+        this.studentName = studentName;   // student name
+        this.studentID = studentID;         //student id
+        this.studentSemester = studentSemester; //the semester the student is currently at
+        this.gradeMathematics = Undefined;   //grade for mathematics same goes for the other lessons
         this.gradeDigitalDesign = Undefined;
         this.gradeEnglish = Undefined;
         this.gradeDataStructure = Undefined;
@@ -61,6 +58,7 @@ public class ReportCardPrjava {
     }
 
 
+//basically the place where we get the things we need studentname,studentid ,student semester and the grades for the lessons
 
 
 
@@ -108,7 +106,7 @@ public class ReportCardPrjava {
     {
         return gradeProceduralProgramming;
     }
-//
+//here is the place where we set the name for the students their id semster and their grades
 
     public void setStudentName(String studentName)
     {
@@ -157,7 +155,7 @@ public class ReportCardPrjava {
     {
         this.gradeProceduralProgramming = gradeProceduralProgramming;
     }
-
+    // Return of  the  object Report Card by using the toString method and a String Builder
     public String toString() {
         StringBuilder builder = new StringBuilder();
         builder.append("Student Name: ");
