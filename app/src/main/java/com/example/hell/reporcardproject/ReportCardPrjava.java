@@ -13,17 +13,17 @@ public class ReportCardPrjava {
     public String Undefined = "Undefined Grade";
 
     // Constants for the grades
-    public static final String Grade_A = "Perfect";
+    public static final String Grade_100 = "Perfect";
 
-    public static final String Grade_B = "Great";
+    public static final String Grade_80 = "Great";
 
-    public static final String Grade_C = "Good";
+    public static final String Grade_60 = "Good";
 
-    public static final String Grade_D = "Borderline Pass";
+    public static final String Grade_50 = "Borderline Pass";
 
-    public static final String Grade_E = "Borderline Fail";
+    public static final String Grade_40 = "Borderline Fail";
 
-    public static final String Grade_F = "Bad" ;
+    public static final String Grade_20 = "Bad" ;
 
     // Variables we gonna need for this like the student name etc
     private String studentName;
